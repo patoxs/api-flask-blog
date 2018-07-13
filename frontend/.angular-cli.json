@@ -1,0 +1,83 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "eb"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "assets/css/bootstrap.min.css",
+        "../node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+        "assets/font-awesome/css/font-awesome.min.css",
+        "assets/css/magnific-popup.css",
+        "assets/vendors/flexslider/flexslider.css",
+        "assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.css",
+        "assets/css/google-font.css",
+        "assets/css/google-font-2.css",
+        "assets/css/default/style.css",
+        "assets/css/responsive/responsive.css",
+        "styles.css"
+      ],
+      "scripts": [
+        "assets/js/jquery-2.1.4.min.js",
+        "assets/js/date.js",
+        "assets/js/bootstrap.min.js",
+        "assets/vendors/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js",
+        "assets/vendors/owl.carousel/owl.carousel.min.js",
+        "assets/vendors/counterup/jquery.counterup.min.js",
+        "assets/vendors/waypoints/waypoints.min.js",
+        "assets/vendors/flexslider/jquery.flexslider-min.js",
+        "assets/js/jquery.magnific-popup.min.js",
+        "assets/vendors/instafeed/instafeed.min.js",
+        "assets/vendors/imagesloaded/imagesloaded.pkgd.min.js",
+        "assets/vendors/isotope/isotope.min.js",
+        "assets/vendors/infinitescrol/jquery.infinitescroll.min.js",
+        "assets/js/theme.js",
+        "assets/js/infinite1.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

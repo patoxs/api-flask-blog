@@ -1,0 +1,32 @@
+<div class="row" id="featured_posts">
+  <div *ngFor="let new of news; index as indice">
+    <div class="col-sm-6 post"  *ngIf="indice < 2">
+      <div class="row inner">
+        <img src="{{new.imageURL}}" alt="" class="featured-img">
+        <div class="row m0 content">
+          <h4 class="category politics"><a href="#">{{new.category}}</a></h4>
+          <h2 class="title"><a href="single-blog.html">{{new.title}}</a></h2>
+          <ul class="post_meta nav nav-pills">
+            <li><a href="#">{{new.date}}</a></li>
+            <li><a href="#"><i class="fa fa-thumbs-o-up"></i>{{new.thumUp}}</a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i>{{new.thumUp}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 post"  *ngIf="indice > 1">
+      <div class="row inner">
+        <img src="{{new.imageURL}}" alt="" class="featured-img">
+        <div class="row m0 content">
+          <h4 class="category politics"><a href="#">{{new.category}}</a></h4>
+          <h2 class="title"><a href="single-blog.html">{{new.title}}</a></h2>
+          <ul class="post_meta nav nav-pills">
+            <li><a href="#">{{new.date}}</a></li>
+            <li><a href="#"><i class="fa fa-thumbs-o-up"></i>{{new.thumUp}}</a></li>
+            <li><a href="#"><i class="fa fa-commenting"></i>{{new.thumUp}}</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

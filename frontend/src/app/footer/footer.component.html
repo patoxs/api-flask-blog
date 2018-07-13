@@ -1,0 +1,24 @@
+<footer class="row">
+    <ul class="nav nav-pills footer_cat_menus">
+        <li *ngFor="let foot of footerMenu"class="parrent_cat">
+            <a href="{{foot.url}}">{{foot.name}}</a>
+            <ul *ngIf="foot.submenu.length>0"class="child_cats nav">
+                <li *ngFor="let subfoot of foot.submenu"><a href="{{subfoot.url}}">{{subfoot.name}}</a></li>
+            </ul>
+        </li>
+    </ul>
+</footer>
+<section class="row copyright-row">
+    <a href="index.html" class="logo fleft">Age</a>
+    <div class="follow_nav fleft">
+        <div class="fleft menuTitle">Follow Us:</div>
+        <ul class="nav nav-pills">
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+    </div>
+    <div class="rights fright">2015 &copy; All Rights Reserved by <a href="#">wwwebinvader</a></div>
+</section>
